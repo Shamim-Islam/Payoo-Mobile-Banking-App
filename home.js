@@ -1,4 +1,7 @@
-//
+// logout functionality -------------------------------------
+document.getElementById("logout").addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
 
 const validPin = 1234;
 
