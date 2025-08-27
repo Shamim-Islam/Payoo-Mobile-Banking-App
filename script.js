@@ -17,9 +17,9 @@ document.getElementById("login-btn").addEventListener("click", function (e) {
     mobileNumberConverted === mobileNumber &&
     pinNumberConverted === pinNumber
   ) {
-    alert("login succesfull");
+    // alert("login succesfull");
     window.location.href = "./home.html";
   } else {
-    alert("Wrong Credentials");
+    alert("Wrong Credentials !");
   }
 });
