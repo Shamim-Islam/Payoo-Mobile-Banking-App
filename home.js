@@ -161,6 +161,12 @@ document
       return;
     }
 
+    // Amount validation
+    if (amount <= 0) {
+      alert("Invalid Amount !");
+      return;
+    }
+
     // pin validation
     if (pin !== validPin) {
       alert("Please provide valid pin number");
@@ -192,6 +198,15 @@ document.getElementById("cash-out-btn").addEventListener("click", function (e) {
   // account number validation for 11 characters
   if (agent.length != 11) {
     alert("❌ Account number must be exactly 11 digits");
+    return;
+  }
+
+  // Amount validation
+  if (cashoutAmount <= 0) {
+    alert("Invalid Amount !");
+    return;
+  } else if (cashoutAmount > availableBalance) {
+    alert("insufficient Amount");
     return;
   }
 
